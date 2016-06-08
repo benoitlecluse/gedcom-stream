@@ -75,7 +75,7 @@ Gedcom.prototype._preprocessLine = function (line) {
     return line;
   }
 
-  data = line.split(' ');
+  data = line.trim().split(' ');
   newData.level = +data.shift();
 
   if (data[0].match(/@.*@/)) {
